@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="about-hero">
+    <h1>Turning Logic into Code.<br>Passion into Play.</h1>
+</section>
+
+
+<section class="about-story">
+    <div class="story-text">
+        <p>
+            I'm a Python Developer with a knack for building clean, efficient solutions
+            and a drive to explore the “why” behind every line of code.
+            Development isn't just syntax — it's engineering experiences that solve
+            real problems and unlock opportunity.
+        </p>
+
+        <p>
+            When I’m not behind the IDE, I operate at the intersection of creativity
+            and technology. From music to gaming to content creation,
+            I’m constantly inspired by how digital systems bring people together.
+        </p>
+    </div>
+
+    <div class="story-visual">
+        <img src="{{ url_for('static', filename='images/IMG_1688.jpeg') }}" alt="Donn">
+    </div>
+</section>
+
+
+<section class="about-skills">
+    <h2>The Multi-Hyphenate Life</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Music</h3>
+            <p>The rhythm behind my deep work and creative flow.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Gaming</h3>
+            <p>Where strategy, UX appreciation and problem-solving sharpen.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Content Creation</h3>
+            <p>Documenting the journey and building in public.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-philosophy">
+    <div class="philosophy-inner">
+        <h2>The Philosophy</h2>
+        <blockquote>
+            “Every great developer was once a beginner who refused to quit.
+            With enough focus, you can bridge the gap between who you are
+            and who you want to become.”
+        </blockquote>
+
+        <p class="signature">
+            Built by hand. Driven by hustle. Powered by Python.
+        </p>
+    </div>
+</section>
+
+{% endblock %}

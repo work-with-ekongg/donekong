@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div>
+        <h1>Building intelligent, high-impact digital systems.</h1>
+        <p>
+            I design and engineer modern web applications
+            focused on performance, clarity, and real-world impact.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/projects" class="btn primary">View Projects</a>
+            <a href="/contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <img src="{{ url_for('static', filename='images/IMG_1644.jpeg') }}" alt="Hero Image">
+    </div>
+</section>
+
+{% endblock %}

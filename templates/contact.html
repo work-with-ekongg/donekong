@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="contact-section">
+
+    <div class="contact-intro">
+        <h2>Let’s Build Something Exceptional.</h2>
+        <p>
+            Whether it's a product idea, automation system, or collaboration —
+            I'm open to meaningful projects that create real impact.
+        </p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            <form method="POST" class="contact-form">
+
+                <div class="input-group">
+                    <input name="name" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input name="email" type="email" required>
+                    <label>Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" required></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button class="btn primary">Start the Conversation</button>
+            </form>
+
+            {% if success %}
+            <p class="success-msg">Message sent successfully. I’ll get back to you soon.</p>
+            {% endif %}
+        </div>
+
+        <div class="contact-visual">
+            <img src="{{ url_for('static', filename='images/IMG_1672.jpeg') }}" alt="Contact Visual">
+        </div>
+    </div>
+
+</section>
+{% endblock %}
